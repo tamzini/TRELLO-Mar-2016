@@ -1,0 +1,200 @@
+/* 
+ * 	Core Owl Carousel CSS 
+ *	v1.3.3
+ */
+
+/* clearfix */
+.owl-carousel .owl-wrapper:after {
+	content: ".";
+	display: block;
+	clear: both;
+	visibility: hidden;
+	line-height: 0;
+	height: 0;
+}
+/* display none until init */
+.owl-carousel{
+	display: none;
+	position: relative;
+	width: 100%;
+	-ms-touch-action: pan-y;
+}
+.owl-carousel .owl-wrapper{
+	display: none;
+	position: relative;
+	-webkit-transform: translate3d(0px, 0px, 0px);
+}
+.owl-carousel .owl-wrapper-outer{
+	overflow: hidden;
+	position: relative;
+	width: 100%;
+}
+.owl-carousel .owl-wrapper-outer.autoHeight{
+	-webkit-transition: height 500ms ease-in-out;
+	-moz-transition: height 500ms ease-in-out;
+	-ms-transition: height 500ms ease-in-out;
+	-o-transition: height 500ms ease-in-out;
+	transition: height 500ms ease-in-out;
+}
+	
+.owl-carousel .owl-item{
+	float: left;
+}
+.owl-controls .owl-page,
+.owl-controls .owl-buttons div{
+	cursor: pointer;
+}
+.owl-controls {
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+
+
+/* carousel  hover effect */
+
+
+.curosel figure {
+margin: auto;
+position: relative;
+overflow: hidden;
+}
+.curosel figure{
+    max-width: 100%;
+    max-height: 100%;
+}
+.curosel figcaption {
+padding-top: 70%;
+height: 100%;
+width: 100%;
+bottom: 0;
+opacity: 0;
+-webkit-transform: scale(2);
+-moz-transform: scale(2);
+-o-transform: scale(2);
+-ms-transform: scale(2);
+transform: scale(2);
+-webkit-transition: all 0.3s linear;
+-moz-transition: all 0.3s linear;
+-o-transition: all 0.3s linear;
+-ms-transition: all 0.3s linear;
+transition: all 0.3s linear;
+position: absolute;
+top: 0;
+left: 0;
+background: url('../images/hovereffect.PNG');
+display: table-cell;
+vertical-align: middle;
+color: #ffffff;
+}
+
+ figure:hover figcaption{
+    opacity: 1;
+        -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -o-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+    -webkit-transition: all 0.3s linear;
+    -moz-transition: all 0.3s linear;
+    -o-transition: all 0.3s linear;
+    -ms-transition: all 0.3s linear;
+    transition: all 0.3s linear;
+}
+figure:hover .figcaption{
+    opacity: 1;
+        -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -o-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+    -webkit-transition: all 0.3s linear;
+    -moz-transition: all 0.3s linear;
+    -o-transition: all 0.3s linear;
+    -ms-transition: all 0.3s linear;
+    transition: all 0.3s linear;
+}
+ figure:hover img{
+
+    -webkit-transform: scale(1.05);
+    -moz-transform: scale(1.05);
+    -o-transform: scale(1.05);
+    -ms-transform: scale(1.05);
+    transform: scale(1.05);
+}
+
+.hover-img-text {
+font-family: source_sans_proregular;
+text-transform: uppercase;
+font-size: 16px;
+letter-spacing: 2px;
+text-align:center;
+margin-bottom: 5px;
+}
+.learn-more-hover {
+font-family: droid_serifitalic;
+color: #ffffff;
+font-size: 14px;
+width: 150px;
+display: block;
+margin-left: auto;
+margin-right: auto;
+text-align: center;
+}
+
+a.learn-more-hover {
+	text-decoration: none;
+}
+
+
+
+/* styling the next and previous buttons */
+
+ #owl-demo .owl-controls .owl-next, #owl-demo-3 .owl-controls .owl-next{
+background: url("../images/button-next.png") 50% 50%!important;
+width: 50px;
+height: 50px;
+text-indent: -10000px;
+cursor: pointer;
+cursor: hand;
+-webkit-user-select: none;
+-khtml-user-select: none;
+-moz-user-select: none;
+-ms-user-select: none;
+user-select: none;
+position: absolute;
+z-index: 20px;
+opacity: 1!important;
+right: 5px;
+top: 35%;
+font-size: 28px;
+color: #fff;
+}
+#owl-demo .owl-controls .owl-prev, #owl-demo-3 .owl-controls .owl-prev{
+background: url(../images/button-previous.png) 50% 50%!important;
+width: 50px;
+height: 50px;
+text-indent: -10000px;
+cursor: pointer;
+cursor: hand;
+-webkit-user-select: none;
+-khtml-user-select: none;
+-moz-user-select: none;
+-ms-user-select: none;
+user-select: none;
+position: absolute;
+z-index: 20px;
+opacity: 1!important;
+left: 5px;
+top: 35%;
+font-size: 28px;
+color: #fff;
+}
+
+
+
+

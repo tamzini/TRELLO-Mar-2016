@@ -1,0 +1,421 @@
+
+// variables
+
+$primaryColor: white; 
+$backgroundColor: black;
+$fontSize : 15px;
+$headerFontSize: 25px;
+$width: 100%;
+$border: 1px solid $primaryColor ;
+$margin: 0px auto;
+
+// mixins
+
+@mixin float-lft {
+	float:left;
+}
+@mixin float-rt {
+	float:right;
+}
+@mixin links {
+	text-decoration:none ;
+}
+
+
+//End of mixins
+
+/*  Mobile firt responsive */
+
+* {
+	margin: 0px;
+	padding: 0px ;
+	box-sizing:border-box ;
+	color:$primaryColor ;
+}
+
+.clear-fix {
+	clear:both;
+}
+
+body {
+	background-color: $backgroundColor ;
+	font-family: verdana,arial, "sans serif" ;
+
+}
+
+/* ---- header div ------ */
+
+.header {
+    background: url("../images/background5.png") 0 -50px;
+	width: $width;
+	height:355px;
+	background-repeat: no-repeat;
+	background-size:cover;
+	background-attachment:fixed ;
+	
+
+
+}
+nav {
+width:$width;
+position:fixed;
+z-index: 400 ;
+}
+
+.logo {
+    width:150px;
+    height:50px;
+	@include float-lft ;
+	margin:30px 10px 10px 5%;
+}
+
+ .logo img {
+	width:150px;
+    height:50px;
+}
+
+.nav-bar {
+    clear:both;
+	width:95%;
+	margin: $margin;
+	padding-bottom: 30px;
+	padding-top:5px;
+}
+.nav-bar li {
+   display:none;
+	width: $width;
+	height:50px ;
+	border: $border;
+	list-style:none;
+	text-align:center;
+	line-height:45px;
+	
+	-moz-transition: background 4s;
+	-ms-transition: background 4s;
+	-o-transition: background 4s;
+	-webkit-transition: background 4s; 
+    transition: background 4s;
+}
+
+.nav-bar a {
+	@include links;
+	display:block ;
+	color:$primaryColor ;
+	-moz-transition: color 4s;
+	-ms-transition: color 4s;
+	-o-transition: color 4s;
+	-webkit-transition: color 4s; 
+     transition: color 4s;
+}
+
+
+.nav-bar li:hover {
+	background: $primaryColor;
+	
+}
+.nav-bar a:hover {
+
+	color: $backgroundColor;
+}
+
+.menu  {
+	@include float-rt ;
+	width:32px;
+	height:32px;
+	background: url("../images/menu-mobile2.PNG") 0 0 ;
+	margin:50px 5% 10px 0px;
+}
+
+.clear-fix {
+	clear:both;
+}
+/* ---- End of header div ------ */
+
+
+/* ---- main div ------ */
+
+main {
+    margin: 140px auto ;
+	width: 95%;
+	background-color: $backgroundColor ;
+
+
+ li {
+	list-style:none ;
+	width:$width;
+	margin-bottom: 20px ;
+	padding-bottom:20px ;
+}
+ h3,h6 {
+	text-align:center;
+	padding:10px;
+}
+
+ p {
+    padding:20px ;
+	text-align:justify ;
+	
+}
+ img {
+	width:80px;
+	height:80px;
+	border-radius:40px ;
+	transition:transform 1s;
+	-webkit-transition: -webkit-transform 1s;
+}
+li:hover img{
+	transform: rotate(360deg);
+	-webkit-transform: rotate(360deg);
+}
+
+ a {
+	@include float-rt;
+	@include links ;
+	font-size:12px ;
+	padding:0px 20px ;
+}
+
+}
+
+main a:hover {
+	color:red ;
+}
+
+.imagealign {
+	text-align: center ;
+	margin:0px ;
+}
+
+
+
+// li.green {background-color: #35BC7A}
+/* ---- End of main div ------ */
+
+
+/* ---- contact div ------ */
+
+.clear-fix {
+ clear: both ;
+ }
+.contact {
+	width: $width ;
+	margin:150px auto ;
+
+}
+.contactForm { 
+	width:95%;
+	margin: 100px auto ;
+	font-size: $fontSize ;
+
+h3 {
+	text-align: center ;
+	margin: 50px 0px 50px 0px ;
+	font-size: 30px;
+	font-weight:normal;
+}
+
+input.details, textarea,button {
+	width: $width ;
+	padding:20px;
+	margin-bottom:10px;
+	background-color:black;
+	border: $border ;
+}
+
+textarea {
+	height:300px;
+}
+
+button {
+	width:70%;
+	margin: 20px 15% 50px 15%;
+}
+}
+#myMap {
+	width:$width ;
+	height:300px;
+}
+/* ---- End of contact div ------ */
+
+
+/* ---- footer div ------ */
+footer {
+	width: $width ;
+	background-color: $backgroundColor;
+}
+.socialMedia {
+	width:$width  ;
+	height:50px;;
+	margin:10px auto  50px auto;
+	
+}
+.socialMedia ul {
+	width:330px;
+	margin: $margin ;
+}
+/*  -- CSS Sprite for social media icons -- */
+.socialMedia li {
+	list-style: none ;
+	float:left;
+    width:48px ;
+	height:44px ;
+	margin: 0px 1% 0px 1% ;
+	
+}
+
+li.facebookicon {
+	background: url("../images/social.png") 0 0 ;
+}
+li.facebookicon:hover {
+	background: url("../images/social.png") 0 -44px ;
+}
+
+
+li.twittericon {
+	background: url("../images/social.png") -49px 0 ;
+}
+li.twittericon:hover {
+	background: url("../images/social.png") -49px -44px ;
+}
+
+li.instaicon {
+	background: url("../images/social.png") -98px 0 ;
+}
+
+li.instaicon:hover {
+	background: url("../images/social.png") -98px -44px ;
+}
+
+li.youtubeicon {
+	background: url("../images/social.png") -147px 0 ;
+}
+
+li.youtubeicon:hover {
+	background: url("../images/social.png") -147px -44px ;
+}
+
+ li.teeicon {
+	background: url("../images/social.png") -196px 0 ;
+}
+
+li.teeicon:hover {
+	background: url("../images/social.png") -196px -44px ;
+} 
+
+li.connecticon {
+	background: url("../images/social.png") -244px 0;
+}
+
+li.connecticon:hover {
+	background: url("../images/social.png") -244px -44px ;
+}
+
+.responsiveicon {
+	width: 100px;
+	margin: 10px auto;
+	padding-top: 50px;
+}
+.responsiveicon img {
+
+	width: 100px;
+	height:50px;
+}
+
+.copyrights {
+	width:$width;
+	padding-bottom :10px ;
+
+}
+.copyrights p {
+	text-align: center ;
+	padding:10px;
+	font-size:13px ;
+}
+
+/* --- styling for laptops --- */
+
+ @media only screen and (min-width: 800px){
+
+// header div
+
+ .header {
+    background: url("../images/background5.png") 0px 0px;
+	height:360px;
+	background-repeat: no-repeat;
+	background-size:cover;
+	background-attachment:fixed ;
+   
+
+}
+
+ .menu {
+ display:none ;
+ }
+ 
+ .nav-bar {
+    padding-bottom: 0px;
+    padding-right:2px;
+    padding-left:20px ;
+	width:$width;
+}
+
+ .nav-bar li {
+    border :0px solid transparent ;
+    display:block;
+    @include float-lft ;
+	width: 155px;	
+}
+
+
+ // main div 
+
+ main {
+ width:90%;
+ margin : 150px auto ;
+
+ li {
+ width:33%;
+ @include float-lft ;
+ }
+
+ }
+
+ // contact div
+ .clear-fix {
+ clear: both ;
+ }
+.contact {
+    margin: 150px auto;
+	clear:both ;
+}
+.personaldetails {
+    width:48%;
+    margin-right: 2% ;
+	@include float-lft;
+}
+.contactForm .comments {
+	width: 50% ;
+	@include float-lft;
+}
+.contactForm .comments textarea {
+    
+	height:190px;
+}
+
+
+#myMap {
+	
+	height:500px;
+	
+}
+
+// footer div 
+
+.socialMedia ul {
+
+	width:330px;
+	margin: $margin ;
+}
+
+	
+}
