@@ -37,11 +37,11 @@ Instead of changing styles when the width gets smaller than 800px, we should cha
 <h6>plugin </h6>
 <p>The photo slide made using owel carousel plugin.</p>
 <p>Click the the screen shot below to visit trello </p>
-<a href = "http://176.32.230.49/trello.com/"  target = "_blank"><img src = "images/trello.png"> </a>
+<a href = "http://176.32.230.49/trello.com/"  target = "_blank"><img src = "images/trello.png" width= "400"> </a>
 
 <br><br>
 
-<p> the design and layout of trello was inspired by    </p>
+<p> the design and layout of trello was inspired by Plum The free HTML Template | Version 1.2  </p>
 
 
 <p> Yaqob Salem </p>
