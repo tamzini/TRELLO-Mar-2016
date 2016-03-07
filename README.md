@@ -24,7 +24,66 @@ A web page with many images can take a long time to load and generates multiple 
 Using image sprites will reduce the number of server requests and save bandwidth.
 In other words instead of using alot of images to show social media icons on your website  you can use single image that include all the icons you need to use then use CSS Image Sprites to show only parts of the image that include the Icon you want to show
 the image below show what an image sprite looks like :
+<br>
 <img src = "images/social.png">
+<br>
+<p>HTML part </p>
+<p> <div class="socialMedia">
+ <ul>
+  <li class = "facebookicon"></li>
+  <li class = "twittericon"></li>
+  <li class = "instaicon"></li>
+  <li class = "youtubeicon"></li>
+  <li class = "teeicon"></li>
+  <li class = "connecticon"></li>
+</ul>
+ </div>
+ </p>
+ <p> The CSS part to achieve image Sprites for social media icons </p>
+<p>
+.socialMedia li {
+  list-style: none;
+  float: left;
+  width: 48px;
+  height: 44px;
+  margin: 0px 1% 0px 1%; }
+
+li.facebookicon {
+  background: url("../images/social.png") 0 0; }
+
+li.facebookicon:hover {
+  background: url("../images/social.png") 0 -44px; }
+
+li.twittericon {
+  background: url("../images/social.png") -49px 0; }
+
+li.twittericon:hover {
+  background: url("../images/social.png") -49px -44px; }
+
+li.instaicon {
+  background: url("../images/social.png") -98px 0; }
+
+li.instaicon:hover {
+  background: url("../images/social.png") -98px -44px; }
+
+li.youtubeicon {
+  background: url("../images/social.png") -147px 0; }
+
+li.youtubeicon:hover {
+  background: url("../images/social.png") -147px -44px; }
+
+li.teeicon {
+  background: url("../images/social.png") -196px 0; }
+
+li.teeicon:hover {
+  background: url("../images/social.png") -196px -44px; }
+
+li.connecticon {
+  background: url("../images/social.png") -244px 0; }
+
+li.connecticon:hover {
+  background: url("../images/social.png") -244px -44px; }
+  </p>
 <h6> Mobile First Responsive </h6>
 <p> trello is mobile first responsive which means designing for mobile before designing for desktop or any other device (This will make the page display faster on smaller devices and mobiles). and as the last statistics show that more users view websites on thier mobiles its becoming so important to keep it mobile first. Thankfully CSS3 introduced Media Query which made that possible and easy to be done. </p>
 
