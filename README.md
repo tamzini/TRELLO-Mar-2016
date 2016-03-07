@@ -1,9 +1,9 @@
 
-multi-purpose website template 
+
 
 <h1> Trello-Mar-2016</h1>
 
-multi-purpose website template 
+Responsive OnePage multi-purpose website template 
 
 <h6> Skills used to build this website: </h6>
 <ul>
@@ -37,7 +37,7 @@ Instead of changing styles when the width gets smaller than 800px, we should cha
 <h6>plugin </h6>
 <p>The photo slide made using owel carousel plugin.</p>
 <p>Click the the screen shot below to visit trello </p>
-<a href = "http://176.32.230.49/trello.com/"  target = "_blank"><img src = "images/trello.png" width= "400"> </a>
+<a href = "http://176.32.230.49/trello.com/"  target = "_blank"><img src = "images/trello.png" width= "600"> </a>
 
 <br><br>
 
