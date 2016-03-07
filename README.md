@@ -18,6 +18,13 @@ Trello-Mar-2016 Responsive OnePage multi-purpose website template
 
 </ul>
 
+<h6> CSS Image Sprites </h6>
+An image sprite is a collection of images put into a single image.
+A web page with many images can take a long time to load and generates multiple server requests.
+Using image sprites will reduce the number of server requests and save bandwidth.
+In other words instead of using alot of images to show social media icons on your website  you can use single image that include all the icons you need to use then use CSS Image Sprites to show only parts of the image that include the Icon you want to show
+the image below show what an image sprite looks like :
+<img src = "images/social.png">
 <h6> Mobile First Responsive </h6>
 <p> trello is mobile first responsive which means designing for mobile before designing for desktop or any other device (This will make the page display faster on smaller devices and mobiles). and as the last statistics show that more users view websites on thier mobiles its becoming so important to keep it mobile first. Thankfully CSS3 introduced Media Query which made that possible and easy to be done. </p>
 
