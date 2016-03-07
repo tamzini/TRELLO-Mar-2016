@@ -22,7 +22,7 @@ Trello-Mar-2016 is a Responsive OnePage multi-purpose website template
 An image sprite is a collection of images put into a single image.
 A web page with many images can take a long time to load and generates multiple server requests.
 Using image sprites will reduce the number of server requests and save bandwidth.
-In other words instead of using alot of images to show social media icons on your website  you can use single image that include all the icons you need to use then use CSS Image Sprites to show only parts of the image that include the Icon you want to show
+For example instead of using alot of images to show social media icons on your website  you can use single image that contains all the icons you need to use then use CSS Image Sprites to show only parts of the image that contain the Icon you want to show
 the image below show what an image sprite looks like :
 <p>
 <img src = "images/social.png">
