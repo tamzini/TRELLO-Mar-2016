@@ -3,7 +3,7 @@
 
 <h1> Trello-Mar-2016</h1>
 
-Responsive OnePage multi-purpose website template 
+Trello-Mar-2016 Responsive OnePage multi-purpose website template 
 
 <h6> Skills used to build this website: </h6>
 <ul>
@@ -13,7 +13,7 @@ Responsive OnePage multi-purpose website template
 <li> JAVASCRIPT </li>
 <li> JQUERY </li>
 <li> Google map API </li>
-<li> CSS Sprites </li
+<li> CSS Sprites </li>
 <li> Owel Carousel plugin </li>
 
 </ul>
